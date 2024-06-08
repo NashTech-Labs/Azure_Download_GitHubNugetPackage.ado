@@ -1,0 +1,15 @@
+# Download GitHub Nuget Packages v1
+# Restore your nuget packages using dotnet CLI.
+
+
+
+
+steps:
+- task: DownloadGitHubNugetPackage@1
+  inputs:
+    packageName: # string. Required. Package Name. 
+    version: # string. Required. Package Version. 
+  # Feeds and authentication
+    #externalFeedCredentials: # string. Alias: externalEndpoints. Required when selectOrConfig = config && command = restore. Credentials for feed from GitHub. 
+  # Advanced
+    #restoreDirectory: # string. Alias: packagesDirectory. Optional. Use when command = restore. Destination directory.
