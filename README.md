@@ -10,7 +10,7 @@ The pipeline requires the following parameters to be defined:
 | ------------- | ------------- | :-------------: | :-------------: | ------------- | :-------------: | ------------- |
 | packageName | Package Name | string |  | | Required | Specifies the name of the package to download from GitHub |
 | version | Package Version | string |  | | Required | Specifies the version of the package to download from GitHub |
-| externalFeedCredentials | Credentials for feed from GitHub | string |  | | Required | Required when selectOrConfig = config && command = restore. Specifies the credentials to use for external registry from GitHub |
+| externalFeedCredentials | Credentials for feed from GitHub | string |  | | Optional | Required when selectOrConfig = config && command = restore. Specifies the credentials to use for external registry from GitHub |
 | restoreDirectory | Destination directory Alias:packagesDirectory | string |  | | Optional | Use when command = restore. Specifies the folder where packages are installed. If no folder is specified, packages are restored into the default system working directory. |
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
