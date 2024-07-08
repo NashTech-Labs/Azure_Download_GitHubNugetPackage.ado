@@ -20,7 +20,7 @@ parameters:
 steps:
 - task: DownloadGitHubNugetPackage@1
   inputs:
-    packageName: '${{parameters.packageName}}' . 
+    packageName: '${{parameters.packageName}}' 
     version: '${{parameters.version}}' 
     externalFeedCredentials: '${{parameters.externalFeedCredentials}}' 
     restoreDirectory: '${{parameters.restoreDirectory}}' 
